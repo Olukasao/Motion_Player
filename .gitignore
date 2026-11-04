@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.env
+.env.*
+.DS_Store
+# captura antiga, substituída por docs/media/player.png
+preview.png

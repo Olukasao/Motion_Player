@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>Motion Player · TV</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/player.js" defer></script>
+</head>
+<body>
+  <main id="player">
+    <video id="video" autoplay muted playsinline preload="auto" aria-label="Vídeos em sequência"></video>
+    <div id="notice" role="status">Carregando motions…</div>
+    <div id="start" hidden><p>Seus motions estão prontos.</p><button id="start-button">Iniciar reprodução</button></div>
+    <section id="controls" aria-label="Controles do player">
+      <div class="brand"><span class="dot"></span> MOTION <span class="tag">PLAYER</span></div>
+      <div class="now"><span id="count">TV / LOOP</span><strong id="title">Preparando reprodução</strong></div>
+      <div class="buttons">
+        <button id="previous" aria-label="Vídeo anterior" title="Anterior (←)">←</button>
+        <button id="pause" aria-label="Pausar" title="Reproduzir ou pausar (Espaço)">Pausar</button>
+        <button id="next" aria-label="Próximo vídeo" title="Próximo (→)">→</button>
+        <button id="sound" title="Ativar ou desativar áudio (M)">Ativar som</button>
+        <button id="fit" title="Ajuste da imagem">Preencher tela</button>
+        <button id="fullscreen" title="Tela cheia (F)">Tela cheia ⛶</button>
+      </div>
+    </section>
+    <div id="progress"><div id="progress-value"></div></div>
+  </main>
+</body>
+</html>

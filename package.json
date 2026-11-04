@@ -1,0 +1,8 @@
+{
+  "name": "motion-player",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Player de motions em loop para TV na rede local",
+  "scripts": { "start": "node server.cjs", "check": "node --check server.cjs && node --check public/player.js" },
+  "engines": { "node": ">=18" }
+}
